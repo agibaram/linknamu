@@ -9,10 +9,14 @@ const links = [
 
 export default function Home() {
   return (
-    <div className="flex flex-1 items-center justify-center bg-zinc-50 px-4 py-12 dark:bg-black">
-      <main className="flex w-full max-w-sm flex-col items-center gap-8 rounded-3xl border border-zinc-200 bg-white p-8 dark:border-zinc-800 dark:bg-zinc-950">
-        <ProfileHeader name="JY. Lim" bio="생활체육 마스터" />
-        <div className="flex w-full flex-col gap-5">
+    <div className="flex flex-1 items-center justify-center bg-gradient-to-b from-[#fffaf2] via-[#fef1e2] to-[#fde3c8] px-6 py-16 sm:px-10 dark:from-[#1c1712] dark:via-[#211a14] dark:to-[#261e16]">
+      <main className="flex w-full max-w-sm flex-col items-center gap-10">
+        <ProfileHeader
+          name="여우제이"
+          bio="생활체육 복싱인간"
+          imageUrl="https://placehold.co/150x150/orange/white"
+        />
+        <div className="flex w-full flex-col gap-4">
           {links.map((link) => (
             <LinkCard key={link.label} label={link.label} href={link.href} />
           ))}
